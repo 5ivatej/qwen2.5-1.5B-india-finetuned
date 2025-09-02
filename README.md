@@ -22,6 +22,8 @@ pipeline_tag: text-generation
 
 # qwen1.5B-india-finetuned
 
+## FOR HUGGINGFACE LINK : KINDLY VISIT : https://huggingface.co/5ivatej/qwen2.5-1.5B-india-finetuned
+
 ## Overview
 This repository contains **Qwen2.5-1.5B** fine-tuned with **LoRA** on small Indic instruction-following datasets.  
 The LoRA adapters were merged into the base weights, producing a **standalone checkpoint** that can be used directly with `mlx_lm`.
