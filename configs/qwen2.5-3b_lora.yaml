@@ -1,0 +1,12 @@
+model: Qwen/Qwen2.5-1.5B    # was 3B
+batch_size: 1
+max_seq_length: 1024        # was 2048
+iters: 1500                 # fine
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_targets: [q_proj,k_proj,v_proj,o_proj,up_proj,down_proj,gate_proj]
+eval_interval: 300          # evaluate less often (saves memory/time)
+checkpoint_interval: 300
+dataset: data               # (directory with train.jsonl / valid.jsonl)
+save_path: adapters/qwen25-1p5b-india
